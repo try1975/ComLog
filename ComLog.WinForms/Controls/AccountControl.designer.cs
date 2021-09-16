@@ -64,6 +64,8 @@ namespace ComLog.WinForms.Controls
             this.pnlGrid = new System.Windows.Forms.Panel();
             this.dgvItems = new ADGV.AdvancedDataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlShowCheck = new System.Windows.Forms.Panel();
+            this.cbShowCheck = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbShowClosed = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -72,8 +74,6 @@ namespace ComLog.WinForms.Controls
             this.btnExcelExport = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.pnlShowCheck = new System.Windows.Forms.Panel();
-            this.cbShowCheck = new System.Windows.Forms.CheckBox();
             this.pnlDetails.SuspendLayout();
             this.pnlFields.SuspendLayout();
             this.pnlMsDaily01.SuspendLayout();
@@ -88,11 +88,11 @@ namespace ComLog.WinForms.Controls
             this.pnlGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).BeginInit();
             this.panel1.SuspendLayout();
+            this.pnlShowCheck.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.pnlShowCheck.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlDetails
@@ -423,6 +423,7 @@ namespace ComLog.WinForms.Controls
             this.dgvItems.AllowUserToDeleteRows = false;
             this.dgvItems.AllowUserToOrderColumns = true;
             this.dgvItems.AutoGenerateContextFilters = true;
+            this.dgvItems.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCellsExceptHeader;
             this.dgvItems.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvItems.Cursor = System.Windows.Forms.Cursors.Default;
             this.dgvItems.DateWithTime = false;
@@ -446,6 +447,27 @@ namespace ComLog.WinForms.Controls
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(654, 41);
             this.panel1.TabIndex = 3;
+            // 
+            // pnlShowCheck
+            // 
+            this.pnlShowCheck.Controls.Add(this.cbShowCheck);
+            this.pnlShowCheck.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlShowCheck.Location = new System.Drawing.Point(446, 0);
+            this.pnlShowCheck.Name = "pnlShowCheck";
+            this.pnlShowCheck.Size = new System.Drawing.Size(104, 41);
+            this.pnlShowCheck.TabIndex = 9;
+            this.pnlShowCheck.Visible = false;
+            // 
+            // cbShowCheck
+            // 
+            this.cbShowCheck.AutoSize = true;
+            this.cbShowCheck.Location = new System.Drawing.Point(13, 16);
+            this.cbShowCheck.Margin = new System.Windows.Forms.Padding(2);
+            this.cbShowCheck.Name = "cbShowCheck";
+            this.cbShowCheck.Size = new System.Drawing.Size(86, 17);
+            this.cbShowCheck.TabIndex = 0;
+            this.cbShowCheck.Text = "Show check";
+            this.cbShowCheck.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -523,27 +545,6 @@ namespace ComLog.WinForms.Controls
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             // 
-            // pnlShowCheck
-            // 
-            this.pnlShowCheck.Controls.Add(this.cbShowCheck);
-            this.pnlShowCheck.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlShowCheck.Location = new System.Drawing.Point(446, 0);
-            this.pnlShowCheck.Name = "pnlShowCheck";
-            this.pnlShowCheck.Size = new System.Drawing.Size(104, 41);
-            this.pnlShowCheck.TabIndex = 9;
-            this.pnlShowCheck.Visible = false;
-            // 
-            // cbShowCheck
-            // 
-            this.cbShowCheck.AutoSize = true;
-            this.cbShowCheck.Location = new System.Drawing.Point(13, 16);
-            this.cbShowCheck.Margin = new System.Windows.Forms.Padding(2);
-            this.cbShowCheck.Name = "cbShowCheck";
-            this.cbShowCheck.Size = new System.Drawing.Size(86, 17);
-            this.cbShowCheck.TabIndex = 0;
-            this.cbShowCheck.Text = "Show check";
-            this.cbShowCheck.UseVisualStyleBackColor = true;
-            // 
             // AccountControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -575,14 +576,14 @@ namespace ComLog.WinForms.Controls
             this.pnlGrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvItems)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.pnlShowCheck.ResumeLayout(false);
+            this.pnlShowCheck.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
-            this.pnlShowCheck.ResumeLayout(false);
-            this.pnlShowCheck.PerformLayout();
             this.ResumeLayout(false);
 
         }
